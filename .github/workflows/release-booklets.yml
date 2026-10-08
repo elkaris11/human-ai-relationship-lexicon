@@ -1,0 +1,23 @@
+name: Attach booklets to a tagged release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-publications.txt
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice
+      - run: python automation/build_publications.py
+      - run: libreoffice --headless --convert-to pdf --outdir build build/Human_AI_Relationship_Lexicon.docx
+      - name: Create release and attach editions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}"             build/Human_AI_Relationship_Lexicon.docx             build/Human_AI_Relationship_Lexicon.pdf             build/Human_AI_Relationship_Lexicon.md             --generate-notes --title "Human/AI Relationship Lexicon ${GITHUB_REF_NAME}"

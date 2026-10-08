@@ -3,3 +3,4 @@ __pycache__/
 .env
 analysis-output/
 .DS_Store
+build/
