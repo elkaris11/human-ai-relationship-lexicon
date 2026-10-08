@@ -5,6 +5,7 @@ category: relationships
 part_of_speech: noun
 version_added: 1.0.0
 ---
+
 # Assistlink
 
 ## Definition
@@ -13,18 +14,17 @@ The functional and communicative connection formed between a human and an AI ass
 
 ## In use
 
-“Assistlink helped describe this collaborative moment clearly.”
+“Our Assistlink works best when I explain both the goal and the reason behind it.”
 
 ## Usage note
 
-This term describes an interaction or role without asserting AI consciousness, emotion, or independent personhood.
+Describes the channel of collaboration, not mutual emotion.
 
 ## Semantic Neighbors
 
-- [Synthbond](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
-- [Techrapport](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
-- [Bytebridge](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
+- **Techrapport**: [related entry](./techrapport.md); relationship should be refined as usage evidence grows.
+- **Synthbond**: [related entry](./synthbond.md); relationship should be refined as usage evidence grows.
 
 ## History
 
-Accepted in the foundational community edition.
+Accepted in the foundational Community Edition v1.0.

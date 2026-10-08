@@ -5,26 +5,26 @@ category: workflow
 part_of_speech: noun
 version_added: 1.0.0
 ---
+
 # Contextstack
 
 ## Definition
 
-The accumulated instructions, examples, preferences, documents, and decisions shaping an AI interaction.
+The accumulated instructions, examples, preferences, documents, and decisions that shape an AI interaction.
 
 ## In use
 
-“Contextstack helped describe this collaborative moment clearly.”
+“A clean Contextstack helped the new session recover the project quickly.”
 
 ## Usage note
 
-This term describes an interaction or role without asserting AI consciousness, emotion, or independent personhood.
+Context may be temporary, incomplete, or system-dependent; do not assume permanent memory.
 
 ## Semantic Neighbors
 
-- [Thinkgarden](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
-- [Synthbond](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
-- [Taskflow](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
+- **Synthbond**: [related entry](./synthbond.md); relationship should be refined as usage evidence grows.
+- **Thinkgarden**: [related entry](./thinkgarden.md); relationship should be refined as usage evidence grows.
 
 ## History
 
-Accepted in the foundational community edition.
+Accepted in the foundational Community Edition v1.0.

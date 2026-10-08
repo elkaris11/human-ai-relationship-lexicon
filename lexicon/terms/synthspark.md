@@ -1,10 +1,11 @@
 ---
 term: Synthspark
 status: accepted
-category: creativity
+category: interaction
 part_of_speech: noun
 version_added: 1.0.0
 ---
+
 # Synthspark
 
 ## Definition
@@ -13,18 +14,17 @@ A new idea, connection, or direction ignited during interaction with an AI.
 
 ## In use
 
-“Synthspark helped describe this collaborative moment clearly.”
+“That odd comparison produced the Synthspark for the whole project.”
 
 ## Usage note
 
-This term describes an interaction or role without asserting AI consciousness, emotion, or independent personhood.
+Credit the spark honestly; the human still decides whether and how to develop it.
 
 ## Semantic Neighbors
 
-- [Sparkchain](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
-- [Novaidea](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
-- [Byteburst](../INDEX.md): related term; maintainers should refine this relationship as usage evidence grows.
+- **Sparkchain**: [related entry](./sparkchain.md); relationship should be refined as usage evidence grows.
+- **Novaidea**: [related entry](./novaidea.md); relationship should be refined as usage evidence grows.
 
 ## History
 
-Accepted in the foundational community edition.
+Accepted in the foundational Community Edition v1.0.
