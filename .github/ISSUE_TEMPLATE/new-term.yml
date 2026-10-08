@@ -1,0 +1,76 @@
+name: New term proposal
+about: Plant a new seedling in the Thinkgarden
+key: new-term
+description: Propose a term for community testing and voting.
+title: "[Seed]: "
+labels: ["proposal", "stage: seed"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for planting a lexical seedling. Similar definitions may become Semantic Neighbors rather than duplicates."
+  - type: input
+    id: term
+    attributes:
+      label: Proposed term
+      placeholder: Thinksync
+    validations:
+      required: true
+  - type: input
+    id: pronunciation
+    attributes:
+      label: Pronunciation
+      placeholder: think-sync
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested category
+      options: [Human role, AI role, Relationship, Interaction, Creativity, Workflow, Culture and humor, Advanced state, Network or future culture, Other]
+    validations:
+      required: true
+  - type: input
+    id: part-of-speech
+    attributes:
+      label: Part of speech
+      placeholder: noun or verb
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Proposed definition
+      description: Define one primary concept in plain language.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example in natural use
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: What language gap does this fill?
+    validations:
+      required: true
+  - type: textarea
+    id: neighbors
+    attributes:
+      label: Possible Semantic Neighbors
+      description: List synonyms, near-synonyms, broader or narrower terms, register variants, or contrasts.
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Usage boundaries or risks
+      description: Explain what the term does not claim, especially about AI consciousness, emotion, agency, or memory.
+    validations:
+      required: true
+  - type: checkboxes
+    id: agreements
+    attributes:
+      label: Agreements
+      options:
+        - label: I agree to the Code of Conduct.
+          required: true
+        - label: I understand automated analysis is advisory and community review controls acceptance.
+          required: true

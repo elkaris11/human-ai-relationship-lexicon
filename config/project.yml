@@ -1,0 +1,11 @@
+project:
+  name: Human/AI Relationship Lexicon
+  default_incubation_days: 30
+voting:
+  minimum_votes: 7
+  minimum_net_score: 3
+  maximum_opposition_ratio: 0.40
+analysis:
+  spelling_similarity_warning: 0.78
+  definition_jaccard_warning: 0.45
+  automatic_decisions: false

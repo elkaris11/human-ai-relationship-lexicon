@@ -1,0 +1,16 @@
+name: Analyze seedling files
+on:
+  pull_request:
+    paths: ["thinkgarden/seedlings/**"]
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python automation/validate_repository.py
+      - name: Explain analysis scope
+        run: echo "Validation passed. Semantic analysis is advisory and is run from proposal term and definition inputs during triage."
