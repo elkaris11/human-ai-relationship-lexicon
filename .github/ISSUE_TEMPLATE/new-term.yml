@@ -1,1 +1,263 @@
-PASTE THE YAML CONTENT HERE
+name: "Plant a Seedling 🌱"
+description: "Propose a new word or phrase for the Human/AI Relationship Lexicon."
+title: "🌱 Seedling: "
+labels:
+  - "proposal"
+  - "stage: seed"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🌱 Welcome to the Thinkgarden
+
+        Every accepted term in the Core Lexicon begins as a seed.
+
+        Plant your idea below and let the community help it grow through
+        discussion, natural usage, revision, and voting.
+
+        🌱 Seed → 🌿 Germinating → 🌳 Growing → 🌻 Ready for Harvest → 📖 Core Lexicon
+
+        Similar meanings are welcome. A related term may become a
+        **Semantic Neighbor** rather than being discarded as a duplicate.
+
+        Fields marked with GitHub's red asterisk are required.
+        Look for **🌟 Required** in the field description too.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🌱 Plant the idea
+
+        Start with the proposed word and its basic linguistic information.
+
+  - type: input
+    id: term
+    attributes:
+      label: "🌱 Proposed term"
+      description: "🌟 Required · Enter only the proposed word or short phrase."
+      placeholder: "Example: Contextbloom"
+    validations:
+      required: true
+
+  - type: input
+    id: pronunciation
+    attributes:
+      label: "🔊 Pronunciation"
+      description: "Optional · Show fellow gardeners how the term should sound."
+      placeholder: "Example: con-text-bloom"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "🗂️ Suggested category"
+      description: "🌟 Required · Choose the branch of the lexicon where this term may grow."
+      options:
+        - "👤 Human Role"
+        - "🤖 AI Role or Identity"
+        - "🔗 Relationship or Connection"
+        - "💬 Interaction Mode"
+        - "✨ Creativity or Innovation"
+        - "⚙️ Productivity or Workflow"
+        - "🎭 Culture or Humor"
+        - "🌌 Advanced Collaboration State"
+        - "🕸️ Network or Future Culture"
+        - "❓ New or Unsure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: part-of-speech
+    attributes:
+      label: "📝 Part of speech"
+      description: "🌟 Required · Choose the most likely grammatical role."
+      options:
+        - "📦 Noun"
+        - "🏃 Verb"
+        - "🎨 Adjective"
+        - "🧭 Adverb"
+        - "💬 Phrase"
+        - "❓ Multiple or Unsure"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📖 Help the seed take shape
+
+        Explain the term clearly enough that another person could recognize
+        the concept and use the term naturally.
+
+  - type: textarea
+    id: definition
+    attributes:
+      label: "📖 Proposed definition"
+      description: "🌟 Required · Define one primary concept in clear, ordinary language."
+      placeholder: |
+        Example:
+
+        The sudden emergence of useful insight after enough
+        relevant context has accumulated.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: "💬 Example in natural use"
+      description: "🌟 Required · Show how someone might naturally use the term in a sentence."
+      placeholder: |
+        Example:
+
+        "The Contextbloom happened when the final notebook
+        page connected everything."
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: "✨ What language gap does this seed fill?"
+      description: "🌟 Required · Explain the experience, role, workflow, relationship, or idea this term helps people name."
+      placeholder: |
+        What can people express with this term that is currently
+        difficult, awkward, or imprecise to describe?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔗 Find its neighbors
+
+        Healthy terms rarely grow alone. Help place this seed within the
+        wider ecosystem of existing and proposed language.
+
+  - type: textarea
+    id: semantic-neighbors
+    attributes:
+      label: "🔗 Possible Semantic Neighbors"
+      description: "Optional · List similar, broader, narrower, contrasting, or differently styled terms."
+      placeholder: |
+        Example:
+
+        - Contextstack: the accumulated context itself
+        - Synthspark: a new idea ignited during AI collaboration
+        - Patternfusion: combined human judgment and AI pattern detection
+    validations:
+      required: false
+
+  - type: textarea
+    id: potential-overlap
+    attributes:
+      label: "🔍 Possible overlap or confusion"
+      description: "Optional · Identify terms people might confuse with this proposal and explain the distinction."
+      placeholder: |
+        Example:
+
+        Contextbloom may resemble Synthspark, but Contextbloom
+        specifically describes insight emerging after enough
+        relevant context has accumulated.
+    validations:
+      required: false
+
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: "🚧 Usage boundaries or risks"
+      description: "🌟 Required · Explain what the term does not mean and identify any misleading implications it could create."
+      placeholder: |
+        Example:
+
+        This term describes a perceived moment in a collaborative
+        workflow. It does not claim that the AI independently
+        experienced insight, emotion, or awareness.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🤔 Invite the gardeners in
+
+        Give the community useful questions to discuss while the term
+        germinates.
+
+  - type: textarea
+    id: discussion-questions
+    attributes:
+      label: "🤔 Questions for fellow gardeners"
+      description: "Optional · Ask questions that could help the community evaluate or strengthen the term."
+      placeholder: |
+        Example:
+
+        - Is this distinct enough from Synthspark?
+        - Is the gardening metaphor intuitive?
+        - Would people use this term naturally?
+        - Does the definition need a narrower boundary?
+    validations:
+      required: false
+
+  - type: input
+    id: attribution
+    attributes:
+      label: "🏷️ Public attribution"
+      description: "Optional · Enter the name or handle that should receive public credit."
+      placeholder: "Example: Elkaris11"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## ✅ Final greenhouse check
+
+        Confirm that the seed is ready to enter community review.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: "✅ Before planting"
+      description: "🌟 Required · Check every box before submitting the proposal."
+      options:
+        - label: "🔎 I searched the Core Lexicon and open proposals for similar terms."
+          required: true
+        - label: "🔗 I understand that similar terms may become Semantic Neighbors instead of being rejected as duplicates."
+          required: true
+        - label: "🗳️ I understand that votes are advisory and final harvest decisions require human review."
+          required: true
+        - label: "🤖 I have not presented unsupported claims about AI consciousness, emotion, memory, agency, or personhood as fact."
+          required: true
+        - label: "🤝 I agree to follow the project Code of Conduct."
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🌻 What happens after planting?
+
+        The proposal enters the Thinkgarden at **🌱 Seed**.
+
+        Community feedback may help the proposal progress through:
+
+        🌱 Seed → 🌿 Germinating → 🌳 Growing → 🌻 Ready for Harvest
+
+        Community reactions provide a quick signal:
+
+        - 👍 **Support**
+        - 👎 **Oppose**
+        - ❤️ **Strong support**
+        - 🤔 **Needs revision**
+
+        Comments, usage examples, definition improvements, and thoughtful
+        objections are more valuable than reaction totals alone.
+
+        Automated analysis may suggest Semantic Neighbors or flag possible
+        overlap, but automation never accepts or rejects a term.
+
+        A human Lexicographer completes the final harvest review.
+
+        **Thank you for helping the Thinkgarden grow. 🌱✨**
