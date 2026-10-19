@@ -3,4 +3,16 @@ __pycache__/
 .env
 analysis-output/
 .DS_Store
+build/# Python-generated files
+*.py[cod]
+.pytest_cache/
+# Generated publications and website
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated publications and website
 build/
+
